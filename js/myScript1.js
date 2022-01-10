@@ -1,3 +1,3 @@
 Function f1() {
-document.getElementById("").innerHTML = "Hello, test!";
+document.getElementById("test1").innerHTML = "Hello, test!";
 }
