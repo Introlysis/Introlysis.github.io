@@ -1,4 +1,14 @@
+var flipped = false
+
 function f1() {
-  document.getElementById("test1").innerHTML = "Hello, test!";
+  global flipped;
+  if flipped {
+    document.getElementById("test1).innerHTML = "Hello, World!";
+    flipped = false;
+  }
+  else {
+    document.getElementById("test1").innerHTML = "Hello, test!";
+    flipped = true;
+  }
 }
 
