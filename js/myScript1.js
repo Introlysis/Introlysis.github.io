@@ -1,4 +1,4 @@
-var flipped = false
+var flipped = false;
 
 function f1() {
   if (flipped) {
