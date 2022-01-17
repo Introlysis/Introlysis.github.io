@@ -9,8 +9,9 @@ a:link, a:visited {
 }
 
 #homeMenu {
-  display:none;
+  display:block;
   list-style:none;
+  color:white;
 }
 
 div.expandingMenu:hover ul#hiddenMenu {
