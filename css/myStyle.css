@@ -1,6 +1,7 @@
 header, footer {
   background-color:black;
   color:white;
+  margin:0;
 }
 
 a:link, a:visited {
