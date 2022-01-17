@@ -1,13 +1,6 @@
-body {
-
-}
-
-p {
-
-}
-
-h1,h2 {
-
+header, footer {
+  background-color:black;
+  color:white;
 }
 
 a:link, a:visited {
@@ -15,12 +8,9 @@ a:link, a:visited {
   color:black;
 }
 
-ul#hiddenMenu {
+#homeMenu {
   display:none;
   list-style:none;
-  background-color:black;
-  color:white
-  width:200px;
 }
 
 div.expandingMenu:hover ul#hiddenMenu {
