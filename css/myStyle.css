@@ -19,6 +19,6 @@ ul#hiddenMenu {
   display:none;
 }
 
-a:hover + ul#hiddenMenu {
+nav:hover ul#hiddenMenu {
   display:block;
 }
