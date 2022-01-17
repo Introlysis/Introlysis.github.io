@@ -8,7 +8,7 @@ a:link, a:visited {
   color:black;
 }
 
-#homeMenuContent {
+#homeMenuContent a:link, #homeMenuContent a:visited {
   display:block;
   list-style:none;
   color:white;
