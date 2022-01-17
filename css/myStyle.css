@@ -9,8 +9,7 @@ header, footer {
 }
 
 header {
-  position:fixed;
-  top:0;
+  position:relative;
 }
 
 a:link, a:visited {
