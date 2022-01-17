@@ -17,6 +17,10 @@ ul#homeMenuContent {
   list-style-type:none;
 }
 
-div.expandingMenu:hover ul#hiddenMenu {
+#homeMenu {
+  display:none;
+}
+
+#homeMenuHover:hover + #homeMenu {
   display:block;
 }
