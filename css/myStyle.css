@@ -8,6 +8,11 @@ header, footer {
   margin:0px;
 }
 
+header {
+  position:fixed;
+  top:0;
+}
+
 a:link, a:visited {
   text-decoration:none;
   color:black;
@@ -24,6 +29,7 @@ ul#homeMenuContent {
 }
 
 #homeMenu {
+  position:absolute;
   display:none;
   width:1000px;
 }
