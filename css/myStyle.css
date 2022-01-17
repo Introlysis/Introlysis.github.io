@@ -17,6 +17,10 @@ a:link, a:visited {
 
 ul#hiddenMenu {
   display:none;
+  list-style:none;
+  background-color:black;
+  color:white
+  width:200px;
 }
 
 div.expandingMenu:hover ul#hiddenMenu {
