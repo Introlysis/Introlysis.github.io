@@ -8,7 +8,7 @@ a:link, a:visited {
   color:black;
 }
 
-#homeMenu li {
+#homeMenu ul {
   display:block;
   list-style:none;
   color:white;
