@@ -19,6 +19,6 @@ ul#hiddenMenu {
   display:none;
 }
 
-nav:hover ul#hiddenMenu {
+div.expandingMenu:hover ul#hiddenMenu {
   display:block;
 }
