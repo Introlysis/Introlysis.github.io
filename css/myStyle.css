@@ -20,5 +20,6 @@ ul#hiddenMenu {
 }
 
 a:hover ul#hiddenMenu {
+  position:relative;
   display:block;
 }
