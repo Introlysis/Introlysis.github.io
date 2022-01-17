@@ -25,6 +25,7 @@ ul#homeMenuContent {
 
 #homeMenu {
   display:none;
+  width:1000px;
 }
 
 #homeMenuHover:hover + #homeMenu {
