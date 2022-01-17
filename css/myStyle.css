@@ -12,7 +12,7 @@ a:link, a:visited {
   color:white;
 }
 
-#homeMenuContent ul {
+ul#homeMenuContent {
   list-style-type:none;
 }
 
