@@ -19,7 +19,6 @@ ul#hiddenMenu {
   display:none;
 }
 
-a:hover ul#hiddenMenu {
-  position:relative;
+a:hover + ul#hiddenMenu {
   display:block;
 }
