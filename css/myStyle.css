@@ -28,3 +28,7 @@ ul#homeMenuContent {
 #homeMenuHover:hover + #homeMenu {
   display:block;
 }
+
+#homeMenu:hover {
+  display:block;
+}
