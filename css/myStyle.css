@@ -1,5 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin:0;
+  color:blue;
+  font-family: serif;
+}
+
+h1, h2, h3 {
+  text-align:center;
+  color:black;
+}
+
+article {
+  border: 10px solid orange;
+  padding: 5px;
 }
 
 header, footer {
@@ -10,15 +26,17 @@ header, footer {
 
 header {
   position:relative;
+  border-bottom: 1px solid orange;
 }
 
 a:link, a:visited {
   text-decoration:none;
-  color:black;
+  color:blue;
 }
 
 #homeMenuContent a:link, #homeMenuContent a:visited {
   display:block;
+  color:black;
   padding:3px;
   background-color: white;
   border: 1px solid gray;
@@ -31,12 +49,16 @@ ul#homeMenuContent {
   margin: 0;
 }
 
+#homeMenuContent li {
+  text-align: center;
+}
+
 #homeMenu {
   position:absolute;
   background-color: black;
-  padding:10px;
+  padding:5px;
   display:none;
-  border:1px solid gray;
+  box-shadow: 2.5px 5px 10px gray;
 }
 
 #homeMenuHover:hover + #homeMenu {
@@ -45,4 +67,15 @@ ul#homeMenuContent {
 
 #homeMenu:hover {
   display:block;
+}
+
+@media (orientation:landscape) {
+  section {
+    float:left;
+    width:50%;
+    
+  }
+  footer {
+    clear:both;
+  }
 }
