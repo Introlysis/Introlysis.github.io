@@ -1,9 +1,9 @@
 * {
   box-sizing: border-box;
+  margin:0;
 }
 
 body {
-  margin:0;
   color:blue;
   font-family: serif;
 }
@@ -11,6 +11,7 @@ body {
 h1, h2, h3 {
   text-align:center;
   color:black;
+  margin-bottom:5px;
 }
 
 article {
@@ -22,11 +23,16 @@ header, footer {
   background-color:black;
   color:white;
   margin:0;
+  padding:5px;
 }
 
 header {
   position:relative;
   border-bottom: 1px solid orange;
+}
+
+footer {
+  text-align:center;
 }
 
 a:link, a:visited {
@@ -49,7 +55,7 @@ ul#homeMenuContent {
   margin: 0;
 }
 
-#homeMenuContent li {
+ul#homeMenuContent li {
   text-align: center;
 }
 
@@ -73,7 +79,6 @@ ul#homeMenuContent {
   section {
     float:left;
     width:50%;
-    
   }
   footer {
     clear:both;
