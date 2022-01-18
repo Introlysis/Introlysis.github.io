@@ -30,7 +30,6 @@ ul#homeMenuContent {
 #homeMenu {
   position:absolute;
   display:none;
-  width:1000px;
 }
 
 #homeMenuHover:hover + #homeMenu {
