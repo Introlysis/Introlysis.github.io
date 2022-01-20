@@ -84,4 +84,7 @@ p {
     float:left;
     width:100%;
   }
+  .col-sm-12 > section {
+    width:95%;
+  }
 }
