@@ -1,46 +1,41 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--
+    <meta name="viewport" content="width=576">
+    -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Joseph Senger</title>
 
-<!--stylesheet and javascript file info-->
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Introweb</title>
-<link rel="stylesheet" href="css/myStyle.css">
-<script src="js/myScript1.js"></script>
-</head>
-
-<!--Page start-->
-<body>
-<header><span id="homeMenuHover">Menu</span>
-<nav id="homeMenu">
-<ul id="homeMenuContent">
-<li><a href="#">Home</a></li>
-<li><a title="Work Experience" href="Pages/Work_Experience.html" target="_blank">Work Experience</a></li>
-<li><a title="Website Examples" href="Pages/Website_Examples.html" target="_blank">Website Examples</a></li>
-</ul>
-</nav>
-</header>
-<h1>Welcome to Intro's Website! Go landscape for some responsive design!</h1>
-<section>
-<h2><a title="Secret link to google" href="http://www.google.com" target="_blank">This is Section 1's heading text (And secretly a link to google!)</a></h2>
-<article>
-<h3>This is a test article heading!</h3>
-<p id="test1">Hello, World!</p>
-<button onclick="f1()">Press Me!</button>
-</article>
-</section>
-<section>
-<h2>This is Section 2's heading!</h2>
-<ul>
-<li>How to make this symbol! &copy;</li>
-<li>And this! &lt;</li>
-<li>And non&nbsp;breaking&nbsp;spaces!</li>
-<li>Here's an image: <img src="Images/20210419_202356.jpg" id="Ocean_Rock" alt="Ocean Rock" height=300 width=400></li>
-</ul>
-</section>
-<footer>
-<p>Here is a random footer</p
-</footer>
-</body>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <a class="navbar-brand" href="#"><h1>Joseph Senger</h1></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsable_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="collapsable_nav">
+          <ul class="navbar-nav mr-auto">
+            <li class="active"><a class="nav-link" href="index.html">Home</a></li>
+            <li><a href="#" class="nav-link">Other Sites</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <a href="index.html"><img class="jumbotron-fluid" id="banner-pic" src="Pictures/20210419_120043.jpg"></a>
+    
+    <script src="js/JQuery/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>
