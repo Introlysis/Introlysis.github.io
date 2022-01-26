@@ -1,6 +1,21 @@
 .navbar-brand h1 {
-  font-size:125%;
+  font-size:150%;
   margin-bottom:0;
+}
+
+.navbar-dark .navbar-brand,.navbar-dark .navbar-brand:hover,.navbar-dark .navbar-brand:focus {
+  color:#ddd;
+  text-shadow:1px 0px rgba(0,0,0,0.5);
+}
+
+section > h2 {
+  margin-top:0.75rem;
+  margin-bottom:0.75rem;
+}
+
+article > h3 {
+  font-size:1.1rem;
+  margin-bottom:0.75rem;
 }
 
 .navbar-toggler {
@@ -44,4 +59,15 @@ header nav {
   .navbar-expand-sm .dropdown-menu a {
     color:#fff;
   }
+  
+}
+
+#left-inset {
+  background:#aaa;
+  box-shadow: inset -10px 5px 20px,inset 0px -5px 20px;
+}
+
+#right-inset {
+  background:#aaa;
+  box-shadow:inset 10px 5px 20px,inset 0px -5px 20px;
 }
