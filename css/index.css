@@ -64,10 +64,10 @@ header nav {
 
 #left-inset {
   background:#aaa;
-  box-shadow: inset -10px 5px 20px,inset 0px -5px 20px;
+  box-shadow: inset -5px 5px 5px,inset 0px -5px 5px;
 }
 
 #right-inset {
   background:#aaa;
-  box-shadow:inset 10px 5px 20px,inset 0px -5px 20px;
+  box-shadow:inset 5px 5px 5px,inset 0px -5px 5px;
 }
