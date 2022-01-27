@@ -62,12 +62,12 @@ header nav {
   
 }
 
-#left-inset {
+.left-inset {
   background:#aaa;
   box-shadow: inset -5px 5px 5px,inset 0px -5px 5px;
 }
 
-#right-inset {
+.right-inset {
   background:#aaa;
   box-shadow:inset 5px 5px 5px,inset 0px -5px 5px;
 }
