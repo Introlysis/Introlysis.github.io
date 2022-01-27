@@ -13,6 +13,10 @@
   text-shadow:1px 0px rgba(0,0,0,0.5);
 }
 
+section {
+  border-bottom:2px solid black;
+}
+
 section > h2 {
   margin-top:0.75rem;
   margin-bottom:0.75rem;
@@ -75,4 +79,12 @@ header nav {
 .right-inset {
   background:#aaa;
   box-shadow:inset 5px 5px 5px,inset 0px -5px 5px;
+}
+
+footer {
+  font-size:0.75rem;
+  text-align:center;
+  padding-top:0.5rem;
+  padding-bottom:0.25rem;
+  border-bottom:1px solid black;
 }
