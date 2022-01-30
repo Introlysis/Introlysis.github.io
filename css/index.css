@@ -40,10 +40,13 @@
   }
 }
 
+.row {
+  align-items: stretch;
+}
+
 .navbar {
   padding-top:0;
   padding-bottom:0;
-  align-items:stretch;
 }
 
 .navbar-brand h1 {
@@ -56,7 +59,7 @@
   text-shadow:1px 0px rgba(0,0,0,0.5);
 }
 
-section {
+.container-fluid > .row > .col-10 {
   border-bottom:2px solid black;
 }
 
@@ -111,7 +114,38 @@ header nav {
   .navbar-expand-sm .dropdown-menu a {
     color:#fff;
   }
-  
+}
+
+.animation-box {
+  height:200px;
+  /*width:90%;
+  margin:auto;*/
+  position:relative;
+  background:#aaa;
+  border:1px solid black;
+  margin-bottom:15px;
+}
+
+.animation-box .ball {
+  border-radius:50%;
+  height:25px;
+  width:25px;
+  position:absolute;
+  background:radial-gradient(circle at 35% 35%, white 10%,dodgerblue 90%,blue);
+}
+
+.bouncing {
+  animation-name:bounce;
+  animation-duration:0.5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+}
+
+@keyframes bounce {
+  to {
+    top:175px;
+  }
 }
 
 .left-inset {
