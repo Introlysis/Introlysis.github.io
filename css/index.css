@@ -117,13 +117,19 @@ header nav {
 }
 
 .animation-box {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
   height:200px;
-  /*width:90%;
-  margin:auto;*/
   position:relative;
   background:#aaa;
   border:1px solid black;
   margin-bottom:15px;
+}
+
+.animation-box > p {
+  font-size:3rem;
+  color:rgba(255,255,255,0.5);
 }
 
 .animation-box .ball {
