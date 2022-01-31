@@ -118,7 +118,6 @@ header nav {
 
 .animation-box {
   display:flex;
-  justify-content: space-around;
   align-items: center;
   height:200px;
   position:relative;
@@ -129,6 +128,8 @@ header nav {
 
 .animation-box > p {
   font-size:2.5rem;
+  flex:1;
+  text-align:center;
   color:rgba(255,255,255,0.5);
 }
 
