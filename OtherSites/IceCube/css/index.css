@@ -17,11 +17,11 @@
   top:50%;
   left:50%;
   transition: transform 2s;
-  transform:translateZ(200px);
+  transform:translateZ(400px);
 }
 
 .cube:hover {
-  transform: translateZ(200px) rotateY(360deg) rotateX(-360deg);
+  transform: translateZ(400px) rotateY(360deg) rotateX(-360deg);
 }
 
 .cube-face {
@@ -29,10 +29,11 @@
   height:200px;
   margin:-100px;
   display:flex;
-  background:gray;
+  background:skyblue;
   justify-content:space-around;
   align-items:center;
   border:1px solid black;
+  box-shadow:inset 0px 0px 20px 10px #fff;
 }
 
 .cube-face:nth-child(1) {
