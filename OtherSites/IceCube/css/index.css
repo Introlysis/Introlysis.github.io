@@ -5,8 +5,15 @@
 .scene {
   height:100vh;
   display:flex;
+  justify-content: space-around;
   perspective:1500px;
-  border:1px solid black;
+}
+
+.cube-item {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:scale(100%);
 }
 
 .cube, .cube-face {
@@ -14,15 +21,36 @@
 }
 
 .cube {
-  top:50%;
-  left:50%;
-  transition: transform 2s;
-  transform:translateZ(400px);
+  transform:rotateX(-30deg);
 }
 
-.cube:hover {
-  transform: translateZ(400px) rotateY(360deg) rotateX(-360deg);
+.display-case {
+  position:absolute;
+  transform:translateZ(400px);
+  animation-name:displayCase;
+  animation-duration:8s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
 }
+
+@keyframes displayCase {
+  25% {
+    transform:translateZ(400px) translateY(-50px) rotateY(90deg);
+  }
+  50% {
+    transform:translateZ(400px) translateY(-100px) rotateY(180deg);
+  }
+  75% {
+    transform:translateZ(400px) translateY(-50px) rotateY(270deg);
+  }
+  100% {
+    transform:translateZ(400px) rotateY(360deg);
+  }
+}
+
+/*.cube:hover {
+  transform: translateZ(400px) rotateY(360deg) rotateX(-360deg);
+}*/
 
 .cube-face {
   width:200px;
@@ -58,4 +86,32 @@
 
 .cube-face:nth-child(6) {
   transform:rotateX(-90deg) translateZ(100px);
+}
+
+.cube-shadow {
+  position:absolute;
+  top:275px;
+  width:340px;
+  height:25px;
+  margin:-12.5px -170px;
+  border-radius:50%;
+  box-shadow:0px 0px 10px 5px rgba(0,0,0,0.8);
+  background:rgba(0,0,0,0.8);
+}
+
+.shadow-shrink {
+  animation-name:shadowShrink;
+  animation-duration:4s;
+  animation-timing-function:linear;
+  animation-direction:alternate;
+  animation-iteration-count:infinite;
+}
+
+@keyframes shadowShrink {
+  to {
+    width:320px;
+    height:15px;
+    background:rgba(0,0,0,0.5);
+    box-shadow:0px 0px 10px 5px rgba(0,0,0,0.5);
+  }
 }
