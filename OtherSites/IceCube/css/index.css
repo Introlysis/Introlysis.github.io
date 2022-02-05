@@ -27,10 +27,10 @@
 .display-case {
   position:absolute;
   transform:translateZ(400px);
-  animation-name:displayCase;
-  animation-duration:8s;
-  animation-iteration-count:infinite;
-  animation-timing-function:linear;
+}
+
+.display-spin {
+  animation:displayCase 8s linear infinite/*,quickSpin 0.2s linear 3*/;
 }
 
 @keyframes displayCase {
@@ -47,6 +47,21 @@
     transform:translateZ(400px) rotateY(360deg);
   }
 }
+
+/*@keyframes quickSpin {
+  25% {
+    transform:translateZ(400px) rotateY(90deg);
+  }
+  50% {
+    transform:translateZ(400px) rotateY(180deg);
+  }
+  75% {
+    transform:translateZ(400px) rotateY(270deg);
+  }
+  100% {
+    transform:translateZ(400px) rotateY(360deg);
+  }
+}*/
 
 /*.cube:hover {
   transform: translateZ(400px) rotateY(360deg) rotateX(-360deg);
@@ -124,7 +139,11 @@
   background:skyblue;
   box-shadow:2px 2px 5px 0px,inset 0px 0px 20px 10px #fff;
   border:none;
-  animation:buttonsAppear 1s ease-out 1,buttonRise 8s linear infinite;
+  transition:visibility 0.5s, opacity 0.5s;
+}
+
+.button-show {
+  animation:buttonsAppear 1s ease-out 1, buttonRise 8s linear infinite;
 }
 
 @keyframes buttonRise {
@@ -175,4 +194,17 @@
 .ice-button:nth-child(6) {
   top:-300px;
   left:300px;
+}
+
+.menu-reset {
+  animation: menuReset 0.5s;
+  visibility:hidden;
+  opacity:0;
+}
+
+@keyframes menuReset {
+  to {
+    top:0;
+    left:0;
+  }
 }
