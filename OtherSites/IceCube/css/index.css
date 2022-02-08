@@ -5,7 +5,7 @@
 .scene {
   height:100vh;
   display:flex;
-  justify-content: space-around;
+  background:linear-gradient(to bottom,#fff,#aaa,#000);
   perspective:1500px;
 }
 
@@ -22,6 +22,7 @@
 
 .cube {
   transform:rotateX(-30deg);
+  transition:transform 0.5s;
 }
 
 .display-case {
@@ -77,6 +78,7 @@
   align-items:center;
   border:1px solid black;
   box-shadow:inset 0px 0px 20px 10px #fff;
+  transition:width 0.5s, height 0.5s, top 2s, left 2s;
 }
 
 .cube-face:nth-child(1) {
@@ -207,4 +209,24 @@
     top:0;
     left:0;
   }
+}
+
+section {
+  position:absolute;
+  top:50%;
+  left:50%;
+  height:0;
+  width:0;
+  overflow:hidden;
+  transition:top 1s, left 1s, width 1s, height 1s;
+}
+
+.active-page {
+  top:0;
+  left:5vw;
+  width:90vw;
+  height:100vh;
+  background:skyblue;
+  box-shadow:inset 0px 0px 20px 10px #fff;
+  border:1px solid black;
 }
