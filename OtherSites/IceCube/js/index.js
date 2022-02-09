@@ -38,42 +38,47 @@ $(document).ready(function() {
     $("section[data-page='" + elem.data("page") + "']").addClass("active-page");
   }
   
-  function slideToSide(elem) {
+  function slideToSide(event) {
+    //remove click event from cube faces
+    $(".cube-face").off("click");
+    
     $("nav > button").addClass("menu-reset");
     $(".display-spin").css("animation-iteration-count",0);
     $(".shadow-shrink").css("animation-iteration-count",0);
     $(".cube").css("transform","rotateX(0deg)");
     
     //different animation if touched cube side instead of button
-    if (elem.hasClass("cube-face")) {
-      getSide(elem.data("page"));
-      setTimeout(expandPage,500,elem);
+    if ($(this).hasClass("cube-face")) {
+      getSide($(this).data("page"));
+      setTimeout(expandPage,500,$(this));
     }
     else {
-      setTimeout(getSide,250,elem.data("page"));
-      setTimeout(expandPage,750,elem);
+      setTimeout(getSide,250,$(this).data("page"));
+      setTimeout(expandPage,750,$(this));
     }
-    
-    
   }
   
-  //click a nav button
-  $("nav > button").click(function() {
-    slideToSide($(this));
-  });
-  
-  //click a cube face
-  $(".cube-face").click(function() {
-    slideToSide($(this));
-  });
-  
-  //back button logic
-  $("section > button").click(function(){
+  function goBack(event){
+   //return click event to cube faces 
+    $(".cube-face").on("click",
+    slideToSide);
+    
     $(this).parent().removeClass("active-page");
     $(".cube-item").show();
     $("nav > .ice-button").removeClass("menu-reset");
     $(".display-spin").css("animation-iteration-count","infinite");
     $(".shadow-shrink").css("animation-iteration-count","infinite");
     $(".cube").css("transform","rotateX(-30deg)");
-  });
+  }
+  
+  //click a nav button
+  $("nav > button").on("click",
+    slideToSide);
+  
+  //click a cube face
+  $(".cube-face").on("click",
+    slideToSide);
+  
+  //back button logic
+  $("section > button").on("click",goBack);
 });
