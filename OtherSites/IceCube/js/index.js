@@ -39,7 +39,7 @@ $(document).ready(function() {
   }
   
   function slideToSide(elem) {
-    $("button").addClass("menu-reset");
+    $("nav > button").addClass("menu-reset");
     $(".display-spin").css("animation-iteration-count",0);
     $(".shadow-shrink").css("animation-iteration-count",0);
     $(".cube").css("transform","rotateX(0deg)");
@@ -57,12 +57,23 @@ $(document).ready(function() {
     
   }
   
-  //click a page button
-  $("button").click(function() {
+  //click a nav button
+  $("nav > button").click(function() {
     slideToSide($(this));
   });
   
+  //click a cube face
   $(".cube-face").click(function() {
     slideToSide($(this));
+  });
+  
+  //back button logic
+  $("section > button").click(function(){
+    $(this).parent().removeClass("active-page");
+    $(".cube-item").show();
+    $("nav > .ice-button").removeClass("menu-reset");
+    $(".display-spin").css("animation-iteration-count","infinite");
+    $(".shadow-shrink").css("animation-iteration-count","infinite");
+    $(".cube").css("transform","rotateX(-30deg)");
   });
 });
