@@ -13,7 +13,37 @@
   position:absolute;
   top:50%;
   left:50%;
-  transform:scale(50%);
+  transform:scale(40%);
+}
+
+@media (min-width:576px) {
+  .cube-item {
+    transform:scale(60%);
+  }
+}
+
+@media (min-width:768px) {
+  .cube-item {
+    transform:scale(80%);
+  }
+}
+
+@media (min-width:992px) {
+  .cube-item {
+    transform:scale(100%);
+  }
+}
+
+@media (min-width:1200px) {
+  .cube-item {
+    transform:scale(120%);
+  }
+}
+
+@media (min-width:1400px) {
+  .cube-item {
+    transform:scale(140%);
+  }
 }
 
 .cube, .cube-face {
@@ -170,30 +200,30 @@
   }
 }
 
-.ice-button:nth-child(1) {
+nav > .ice-button:nth-child(1) {
   top:-400px;
   left:-300px;
 }
 
-.ice-button:nth-child(2) {
+nav > .ice-button:nth-child(2) {
   top:-400px;
 }
 
-.ice-button:nth-child(3) {
+nav > .ice-button:nth-child(3) {
   top:-400px;
   left:300px;
 }
 
-.ice-button:nth-child(4) {
+nav > .ice-button:nth-child(4) {
   top:-300px;
   left:-300px;
 }
 
-.ice-button:nth-child(5) {
+nav > .ice-button:nth-child(5) {
   top:-300px;
 }
 
-.ice-button:nth-child(6) {
+nav > .ice-button:nth-child(6) {
   top:-300px;
   left:300px;
 }
@@ -217,8 +247,23 @@ section {
   left:50%;
   height:0;
   width:0;
-  overflow:hidden;
-  transition:top 1s, left 1s, width 1s, height 1s;
+  padding:1.5rem;
+  opacity:0;
+  transition:top 0.5s, left 0.5s, width 0.5s, height 0.5s, opacity 0.3s;
+}
+
+section > .ice-button {
+  margin:0;
+  top:0;
+  left:0;
+  box-shadow:inset 0px 0px 20px 10px #fff;
+  border-right:1px solid black;
+  border-bottom:1px solid black;
+}
+
+section > h2 {
+  margin-top:2rem;
+  text-align:center;
 }
 
 .active-page {
@@ -226,6 +271,7 @@ section {
   left:5vw;
   width:90vw;
   height:100vh;
+  opacity:1;
   background:skyblue;
   box-shadow:inset 0px 0px 20px 10px #fff;
   border:1px solid black;
