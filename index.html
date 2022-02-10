@@ -29,8 +29,10 @@
             <li><a class="nav-link" href="https://github.com/Introlysis/Introlysis.github.io" title="Review this project on github">Github</a></li>
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Other Sites</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="OtherSites/Menu/">Menu</a>
-              </div>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="OtherSites/Menu/">Menu</a></li>
+                <li><a class="dropdown-item" href="OtherSites/IceCube/">Ice Cube</a></li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -48,10 +50,16 @@
           <div class="row">
             <section class="col-12 col-sm-6">
               <h2>About Me</h2>
+              <hr>
               <article>
-                <h3>
-                  Joseph Senger
-                </h3>
+                <div class="nameplate">
+                  <h3>
+                    Joseph&nbsp;Senger
+                  </h3>
+                  <p>
+                    <strong>Telecom Auditor</strong> -<a title="LinkedIn page link" href="https://www.linkedin.com/in/joseph-senger-a94aa36a"><img id="linkedinLogo" alt="LinkedIn logo" src="Pictures/linkedin-logo_icon.png"></a>
+                  </p>
+                </div>
                 <p>
                   Welcome to my website! Make yourself at home. This website changes with browser size - Also, feel free to check out my other websites by clicking on their links in the navigation bar!
                 </p>
@@ -61,11 +69,25 @@
               <h2>
                 Animations
               </h2>
-              <div class="animation-box">
-                <p>
-                  Click in here!
-                </p>
-                <div class="ball"></div>
+              <div id="animationsCarousel" class="carousel slide">
+                <ol class="carousel-indicators">
+                  <li data-target="#animationsCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#animationsCarousel" data-slide-to="1"></li>
+                  <li data-target="#animationsCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="animation-box">
+                      <p aria-hidden="true">
+                        Click in here!
+                      </p>
+                      <div class="ball"></div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    Test
+                  </div>
+                </div>
               </div>
             </section>
           </div>
@@ -75,7 +97,7 @@
     </div>
     
     <footer>
-      Thanks for viewing!<br>
+      Made with Bootstrap<br>
       Here's a fake copyright! &copy;
     </footer>
     
