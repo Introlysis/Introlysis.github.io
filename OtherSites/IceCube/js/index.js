@@ -42,7 +42,8 @@ $(document).ready(function() {
     //remove click event from cube faces
     $(".cube-face").off("click");
     
-    $("nav > button").addClass("menu-reset");
+    $(".cube-item > button").addClass("menu-reset");
+    $(".cube-face:not(.cube-face[data-page='" + $(this).data("page") + "']) > span").hide(250);
     $(".display-spin").css("animation-iteration-count",0);
     $(".shadow-shrink").css("animation-iteration-count",0);
     $(".cube").css("transform","rotateX(0deg)");
@@ -64,15 +65,16 @@ $(document).ready(function() {
     slideToSide);
     
     $(this).parent().removeClass("active-page");
+    $(".cube-face > span").show();
     $(".cube-item").show();
-    $("nav > .ice-button").removeClass("menu-reset");
+    $(".cube-item > .ice-button").removeClass("menu-reset");
     $(".display-spin").css("animation-iteration-count","infinite");
     $(".shadow-shrink").css("animation-iteration-count","infinite");
     $(".cube").css("transform","rotateX(-30deg)");
   }
   
-  //click a nav button
-  $("nav > button").on("click",
+  //click a page button
+  $(".cube-item > button").on("click",
     slideToSide);
   
   //click a cube face
