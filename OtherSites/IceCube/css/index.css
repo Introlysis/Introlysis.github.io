@@ -24,25 +24,25 @@
 
 @media (min-width:768px) {
   .cube-item {
-    transform:scale(80%);
+    transform:scale(70%);
   }
 }
 
 @media (min-width:992px) {
   .cube-item {
-    transform:scale(100%);
+    transform:scale(80%);
   }
 }
 
 @media (min-width:1200px) {
   .cube-item {
-    transform:scale(120%);
+    transform:scale(80%);
   }
 }
 
 @media (min-width:1400px) {
   .cube-item {
-    transform:scale(140%);
+    transform:scale(90%);
   }
 }
 
